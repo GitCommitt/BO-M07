@@ -1,10 +1,12 @@
 import './App.css'
+import { Navbar } from '../navbar/Navbar'
 import { AddTodo} from '../addTodo/AddTodo'
 
 function App() {
   return (
     <main>
-        <AddTodo/>
+      <Navbar/>
+      <AddTodo/>   
     </main>
   )
 }
