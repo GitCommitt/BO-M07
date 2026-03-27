@@ -3,7 +3,7 @@ export function AboutMe(){
 
     return (
         <div className='aboutMe'>
-            <img className='about-me_selfie' src="./src/assets/img/selfie.png" alt="ca" />
+            <img className='about-me_selfie' src="./img/selfie.png" alt="ca" />
             <div className='about-me_info'>
                 <h2 className='about-me-info_h2'>About Me</h2>
                 <p className='about-me-info_p'>Info over mij
