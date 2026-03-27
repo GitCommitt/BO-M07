@@ -1,0 +1,65 @@
+.contact {
+    background: #ffffff;
+    border-radius: 24px;
+    box-shadow: 0 4px 24px 0 rgba(0,0,0,0.08), 0 1.5px 4px 0 rgba(0,0,0,0.03);
+    display: flex;
+    flex-direction: column;
+    padding: 40px 48px;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    margin: 60px auto 0 auto;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    border: none;
+}
+
+@media (max-width: 1500px) {
+    .showTodo {
+        flex-direction: column;
+        width: 80%;
+        padding: 32px 10px;
+        gap: 28px;
+    }
+}
+
+.contact-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1d1d1f;
+    letter-spacing: -0.022em;
+    font-family: inherit;
+    text-align: center;
+}
+
+.contact-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.contact{
+    background: #ffffff;
+    border-radius: 24px;
+    box-shadow: 0 4px 24px 0 rgba(0,0,0,0.08), 0 1.5px 4px 0 rgba(0,0,0,0.03);
+    display: flex;
+    flex-direction: column;
+    padding: 20px 25px;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    border: none;
+}
+
+.contact a{
+  text-decoration: none;
+  color: rgb(59, 59, 59);
+}
+
+.contact a:hover{
+  color: rgb(116, 116, 116);
+}
