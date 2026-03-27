@@ -1,0 +1,85 @@
+.addTodo {
+    background: #ffffff;
+    border-radius: 24px;
+    box-shadow: 0 4px 24px 0 rgba(0,0,0,0.08), 0 1.5px 4px 0 rgba(0,0,0,0.03);
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    padding: 40px 48px;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    margin: 60px auto 0 auto;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    border: none;
+}
+
+@media (max-width: 1500px) {
+    .addTodo {
+        flex-direction: column;
+        width: 80%;
+        padding: 32px 10px;
+        gap: 28px;
+    }
+}
+
+.addTodo-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0 0 18px 0;
+    color: #1d1d1f;
+    letter-spacing: -0.022em;
+    font-family: inherit;
+}
+
+.addTodo-card {
+    display: flex;
+    width: 100%;
+    max-width: 400px;
+}
+
+.addTodo-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+}
+
+.inputAddTodo {
+    background-color: rgba(0, 0, 0, 0.02);
+    border: 1px solid #d2d2d7;
+    border-radius: 12px;
+    padding: 12px 16px;
+    font-size: 17px;
+    font-family: inherit;
+    color: #1d1d1f;
+    transition: all 0.2s ease;
+    outline: none;
+}
+
+.inputAddTodo:focus {
+    border-color: #4d4c4c;
+    background-color: #ffffff;
+}
+
+input[type="submit"] {
+    background-color: #7c8288;
+    color: #ffffff;
+    border: none;
+    border-radius: 12px;
+    padding: 12px 20px;
+    font-size: 17px;
+    font-weight: 600;
+    font-family: inherit;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #99a0a7;
+}
+
+input[type="submit"]:active {
+    transform: scale(0.98);
+    background-color: #000000;
+}
