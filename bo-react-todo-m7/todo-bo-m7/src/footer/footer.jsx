@@ -7,7 +7,7 @@ export function Footer() {
             <p>&copy; 2026 Todos. Alle rechten voorbehouden.</p>
             <ul class="footer-links">
             <li><a href="#">Privacybeleid</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
         </footer>
