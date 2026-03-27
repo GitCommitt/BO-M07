@@ -2,6 +2,7 @@ import './App.css'
 import { Navbar } from '../navbar/Navbar'
 import { AddTodo} from '../addTodo/AddTodo'
 import { ShowTodo} from '../showTodo/ShowTodo'
+import { Footer } from '../footer/Footer'
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Navbar/>
       <AddTodo/>
       <ShowTodo/>
+      <Footer/>   
     </main>
   )
 }
