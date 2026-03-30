@@ -5,7 +5,7 @@ header("Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS");
 $servername = "db";
 $username = "root";
 $password = "rootpassword";
-$dbname   = "todo_app";
+$dbname   = "todo_app_m7";
 
 $conn = mysqli_connect($servername, $username, $password, $dbname);
 
