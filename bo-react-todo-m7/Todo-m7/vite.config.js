@@ -8,10 +8,4 @@ export default defineConfig({
     react(),
     babel({ presets: [reactCompilerPreset()] })
   ],
-  server: {
-    watch: {
-      usePolling: true,
-      interval: 1000
-    }
-  }
 })
