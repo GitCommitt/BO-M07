@@ -19,7 +19,7 @@ $stmt = $mysqli->prepare("UPDATE todos SET status=? WHERE id = ?");
 $status = $data["status"];
 $stmt->bind_param("si", $status, $text);
 
-if ($stmt->execute()) {
+if ($stmt->execute()) { 
     echo "Success!";
 } else {
     echo "Failure!";
