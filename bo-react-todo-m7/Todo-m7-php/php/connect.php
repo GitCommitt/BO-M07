@@ -1,6 +1,6 @@
 <?php
 // MySQL verbinding
-$mysqli = new mysqli("db", "root", "rootpassword", "todo_app");
+$mysqli = new mysqli("db", "root", "rootpassword", "todo_app_m7");
 
 // Check voor verbindingsfouten
 if ($mysqli->connect_error) {
