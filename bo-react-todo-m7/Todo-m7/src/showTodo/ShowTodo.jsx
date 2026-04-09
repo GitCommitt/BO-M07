@@ -1,5 +1,5 @@
 ﻿import './ShowTodo.css'
-import { Todo } from './Todo'
+import { Todo } from './Todo.jsx'
 import { useState, useEffect } from 'react'
 
 export function ShowTodo({ refreshTrigger }) {

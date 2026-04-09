@@ -2,10 +2,10 @@ import './Footer.css';
 
 export function Footer() {
     return (
-        <footer class="footer">
-        <div class="footer-content">
+        <footer className="footer">
+        <div className="footer-content">
             <p>&copy; 2026 Todos. Alle rechten voorbehouden.</p>
-            <ul class="footer-links">
+            <ul className="footer-links">
             <li><a href="#">Privacybeleid</a></li>
             <li><a href="#contact">Contact</a></li>
             </ul>
