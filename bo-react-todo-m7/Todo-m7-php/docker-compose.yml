@@ -18,7 +18,6 @@ services:
   db:
     image: mysql:8.4
     container_name: mysql_todo_db_m7
-    restart: always
     environment:
       MYSQL_ROOT_PASSWORD: rootpassword
       MYSQL_DATABASE: todo_app_m7
@@ -29,7 +28,6 @@ services:
   phpmyadmin:
     image: phpmyadmin/phpmyadmin:latest
     container_name: phpmyadmin_todo_m7
-    restart: always
     ports:
       - "8081:80"
     environment:
