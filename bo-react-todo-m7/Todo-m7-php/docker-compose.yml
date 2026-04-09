@@ -24,6 +24,7 @@ services:
       MYSQL_DATABASE: todo_app_m7
     volumes:
       - mysql_data:/var/lib/mysql
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
 
   phpmyadmin:
     image: phpmyadmin/phpmyadmin:latest
