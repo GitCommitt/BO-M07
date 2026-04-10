@@ -7,7 +7,7 @@ export function Todo({todoData}) {
             },
             body: JSON.stringify({ 
                 id: todoData.id,
-                status: todoData.status
+                status: "Done"
             })
         };
         const response = await fetch('http://localhost:8080/api/editTodo.php', options);
