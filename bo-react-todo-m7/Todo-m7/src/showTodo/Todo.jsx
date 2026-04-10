@@ -5,7 +5,7 @@ export function Todo({todoData}) {
             <h2>{todoData.text}</h2> 
             <p className="todo-item" id="list">Status: <strong>{todoData.status}</strong></p>
             <p className="todo-item" id="list">Datum: <strong>{todoData.timestamp}</strong></p>
-            <button className="todo-button">Done</button>
+            <button className="todo-button" onClick={"editTodo"}>{todoData.status}</button>
         </ul>
         
     )

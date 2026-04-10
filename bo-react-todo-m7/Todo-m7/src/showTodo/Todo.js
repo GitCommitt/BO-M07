@@ -7,7 +7,7 @@ export function Todo({todoData}) {
             },
             body: JSON.stringify({ 
                 id: todoData.id,
-                status: "Done" 
+                status: todoData.status
             })
         };
         const response = await fetch('http://localhost:8080/api/editTodo.php', options);
@@ -23,7 +23,8 @@ export function Todo({todoData}) {
             <h2>{todoData.text}</h2> 
             <p className="todo-item" id="list">Status: <strong>{todoData.status}</strong></p>
             <p className="todo-item" id="list">Datum: <strong>{todoData.timestamp}</strong></p>
-            <button className="todo-button" onClick={handleDone}>Done</button>
+            
+            <button className="todo-button" onClick={handleDone}>{todoData.status}</button>
         </ul>
     )
 }
