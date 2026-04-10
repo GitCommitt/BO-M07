@@ -1,41 +1,4 @@
-export function Todo({todoData, onTodoDeleted}) {
-    async function handleDone() {
-        const options = {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({ 
-                id: todoData.id,
-                status: "Done"
-            })
-        };
-        const response = await fetch('http://localhost:8080/api/editTodo.php', options);
-        if(response.ok) {
-            window.location.reload();
-        } else {
-            console.log("Fout bij updaten:", response.status);
-        }
-    }
-
-    async function handleDelete() {
-        const response = await fetch('http://localhost:8080/api/deleteTodo.php', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({ id: todoData.id }),
-        })
-
-        if (response.ok) {
-            if (typeof onTodoDeleted === 'function') {
-                onTodoDeleted()
-            }
-        } else {
-            console.error('Kon todo niet verwijderen', response.status)
-        }
-    }
-
+export function Todo({todoData}) {
     return (
         <ul className="todo">
             <h2>{todoData.text}</h2> 
