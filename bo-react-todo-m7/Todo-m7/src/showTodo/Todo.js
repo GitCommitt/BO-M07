@@ -1,4 +1,4 @@
-export function Todo({todoData}) {
+export function Todo({todoData, onTodoDeleted}) {
     async function handleDone() {
         const options = {
             method: 'POST',
@@ -18,13 +18,31 @@ export function Todo({todoData}) {
         }
     }
 
+    async function handleDelete() {
+        const response = await fetch('http://localhost:8080/api/deleteTodo.php', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ id: todoData.id }),
+        })
+
+        if (response.ok) {
+            if (typeof onTodoDeleted === 'function') {
+                onTodoDeleted()
+            }
+        } else {
+            console.error('Kon todo niet verwijderen', response.status)
+        }
+    }
+
     return (
         <ul className="todo">
             <h2>{todoData.text}</h2> 
             <p className="todo-item" id="list">Status: <strong>{todoData.status}</strong></p>
             <p className="todo-item" id="list">Datum: <strong>{todoData.timestamp}</strong></p>
             <button className="todo-button" onClick={"deleteTodo"}>{todoData.delete}</button>
-            <button className="todo-button" onClick={handleDone}>{todoData.status}</button>
+            <button className="todo-button" onClick={"handleDone"}>{todoData.status}</button>
         </ul>
     )
 }
