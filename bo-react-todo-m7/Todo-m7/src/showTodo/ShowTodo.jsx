@@ -27,7 +27,7 @@ export function ShowTodo({ refreshTrigger }) {
 
       <div className='showTodo-card'>
         {todos.map((todo) => {
-          return <Todo todoData={todo} key={todo.id} />
+          return <Todo todoData={todo} key={todo.id} onTodoDeleted={getTodos} />
         })}
       </div>
     </div>
