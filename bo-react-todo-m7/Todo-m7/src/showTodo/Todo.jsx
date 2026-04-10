@@ -24,7 +24,7 @@ export function Todo({todoData}) {
             <p className="todo-item" id="list">Status: <strong>{todoData.status}</strong></p>
             <p className="todo-item" id="list">Datum: <strong>{todoData.timestamp}</strong></p>
             <button className="todo-button" onClick={handleDone}>{todoData.status}</button>
+            <button className="todo-button-remove" onClick={handleDelete}>Verwijder</button>
         </ul>
-        
     )
 }

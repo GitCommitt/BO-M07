@@ -75,11 +75,33 @@
     transition: all 0.2s ease;
 }
 
+.todo-button-remove{
+        background-color: rgb(184, 32, 32);
+    color: #ffffff;
+    border: none;
+    border-radius: 12px;
+    padding: 12px 20px;
+    font-size: 17px;
+    font-weight: 600;
+    font-family: inherit;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
 .todo-button:hover {
     background-color: #99a0a7;
 }
 
+.todo-button-remove:hover {
+    background-color: rgb(218, 42, 42);
+}
+
 .todo-button:active {
+    transform: scale(0.98);
+    background-color: #000000;
+}
+
+.todo-button-remove:active {
     transform: scale(0.98);
     background-color: #000000;
 }
