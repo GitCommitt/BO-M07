@@ -40,8 +40,10 @@ export function Todo({todoData, onTodoDeleted}) {
             <h2>{todoData.text}</h2> 
             <p className="todo-item" id="list">Status: <strong>{todoData.status}</strong></p>
             <p className="todo-item" id="list">Datum: <strong>{todoData.timestamp}</strong></p>
-            <button className="todo-button" onClick={handleDone}>{todoData.status}</button>
-            <button className="todo-button-remove" onClick={handleDelete}>Verwijder</button>
+            <div className="todo-buttons">
+                <button className="todo-button" onClick={handleDone}>Done</button>
+                <button className="todo-button-remove" onClick={handleDelete}>Verwijder</button>
+            </div>
         </ul>
     )
 }
